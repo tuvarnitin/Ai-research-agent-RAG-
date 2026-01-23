@@ -4,16 +4,19 @@
   font-family: sansation-bold;
   src: url(./assets/fonts/Sansation/Sansation-Bold.ttf);
 }
+
 @font-face {
   font-family: sansation-regular;
   src: url(./assets/fonts/Sansation/Sansation-Regular.ttf);
 }
+
 @font-face {
   font-family: sansation-light;
   src: url(./assets/fonts/Sansation/Sansation-Light.ttf);
 }
 
-html,body{
+html,
+body {
   width: 100%;
   min-height: 100dvh;
   font-family: sansation-regular;
@@ -22,27 +25,29 @@ html,body{
 @theme {
   /* Animation keyframes */
   --animate-myspin: myspin 360s infinite linear;
+
   @keyframes myspin {
 
     0%,
     {
-      transform: rotate(0deg)
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+    transform: rotate(0deg)
   }
-  --color-background : var(--color-zinc-950);
-  --color-foreground:var(--color-zinc-100);
 
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+--color-background : var(--color-zinc-950);
+--color-foreground:var(--color-zinc-100);
 }
 
 
-@layer base{
+@layer base {
+
   /* Base color */
   html,
-    body {
+  body {
     @apply bg-background text-foreground;
-    }
+  }
 }
-

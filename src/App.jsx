@@ -5,8 +5,7 @@ import Lenis from 'lenis'
 
 // Initialize Lenis
 const lenis = new Lenis({
-  autoRaf: true,
-  lerp:0.08
+  autoRaf: true
 });
 
 
