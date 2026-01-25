@@ -38,7 +38,7 @@ body {
   }
 }
 
---color-background : var(--color-zinc-950);
+--color-background : var(--color-zinc-900);
 --color-foreground:var(--color-zinc-100);
 }
 
